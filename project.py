@@ -10,7 +10,7 @@ def rank_footballer(new_footballer, footballer_list):
 
         if rank == "A":
             footballer_list.insert(i, new_footballer)
-            return footballer_list
+            return footballer_list[0:i+1]
 
         elif rank =="B":
            continue
@@ -20,5 +20,5 @@ def rank_footballer(new_footballer, footballer_list):
 
 print("Your new ranking of footballers is", rank_footballer(new_footballer, footballer_list))
 
-list = [1,2,3,4]
-list = list[0:1]
+
+
