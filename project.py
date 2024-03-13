@@ -1,21 +1,24 @@
-engine_list = ["Stirling Single", "Flying Scotsman", "Mallard", "Ivat Class D1" , "Ivat Class C1", "Ivatt Class C2"]
+footballer_list = ["Cristiano Ronaldo", "Lionel Messi", "Diego Maradona", "Franz Beckenbauer" , "Pele", "Zinedine Zidane"]
 
-new_engine = input("What engine would you like to add to the list?")
+new_footballer = input("What footballer would you like to add to the list?")
 
-def rank_engine(new_engine, engine_list):
+def rank_footballer(new_footballer, footballer_list):
 
-    for i in range(len(engine_list)):
+    for i in range(len(footballer_list)):
 
-        rank = input("Do you like A)" + new_engine + " more or B)" + engine_list[i] + "more? A/B")
+        rank = input("Do you like A)" + new_footballer + " more or B)" + footballer_list[i] + " more? A/B")
 
         if rank == "A":
-            engine_list.insert(i, new_engine)
-            return engine_list
+            footballer_list.insert(i, new_footballer)
+            return footballer_list
 
         elif rank =="B":
            continue
 
-    engine_list.append(new_engine)
-    return engine_list
+    footballer_list.append(new_footballer)
+    return footballer_list
 
-print("Your new ranking of engines is", rank_engine(new_engine, engine_list))
+print("Your new ranking of footballers is", rank_footballer(new_footballer, footballer_list))
+
+list = [1,2,3,4]
+list = list[0:1]
